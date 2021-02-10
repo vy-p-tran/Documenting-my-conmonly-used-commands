@@ -1,1 +1,3 @@
 
+#To split a character list according to a specified character, and only keep the first components:
+list2 = sapply(strsplit(list1, split = "\\|"), `[`, 1) #The symbol | is a special character (regular expression, so you need the double escape \\)
